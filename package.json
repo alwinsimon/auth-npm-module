@@ -1,0 +1,48 @@
+{
+  "name": "base-auth-handler",
+  "version": "1.0.0",
+  "description": "A simple Authentication handling module.",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build",
+    "build": "npm run clean && tsc",
+    "update": "npm version patch",
+    "pub": "npm run build && npm publish"
+  },
+  "keywords": [
+    "auth",
+    "authentication",
+    "auth handling",
+    "auth utilities",
+    "typescript",
+    "express"
+  ],
+  "author": "Dr. Alwin Simon M",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alwinsimon/auth-npm-module"
+  },
+  "bugs": {
+    "url": "https://github.com/alwinsimon/auth-npm-module/issues"
+  },
+  "homepage": "https://github.com/alwinsimon/auth-npm-module",
+  "private": false,
+  "devDependencies": {
+    "del-cli": "^5.1.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/cookie-session": "^2.0.45",
+    "@types/express": "^4.17.18",
+    "@types/jsonwebtoken": "^9.0.3",
+    "cookie-session": "^2.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
