@@ -19,22 +19,23 @@ export const currentUser = (
   res: Response,
   next: NextFunction
 ) => {
-  if (!req.session?.jwt) {
-    // If there is no jwt, pass on to the next function
+  if (!req.cookies?.jwt) {
+    // If there is no jwt, pass on to the next function, without setting currentUser object.
     return next();
   }
 
-  // If there is a jwt present
+  // If there is a jwt present, verify it with JWT_KEY and extract payload from it.
   try {
     const payload = jwt.verify(
-      req.session.jwt,
+      req.cookies.jwt,
       process.env.JWT_KEY!
     ) as UserPayload;
 
-    // If the jwt is successfully verified, return the payload.
+    // If the jwt is successfully verified, create a currentUser object in response object,
+    // and return the payload extracted from jwt.
     req.currentUser = payload;
   } catch (err) {
-    // jwt.verify is going to throw error, if the token validation fails.
+    // If the token validation fails, jwt.verify is going to throw error.
     // It can be ignored as we have nothing to do in this middleware about this particular error.
   }
 
