@@ -1,6 +1,6 @@
 {
   "name": "base-auth-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Authentication handling module.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
