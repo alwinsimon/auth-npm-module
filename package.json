@@ -2,13 +2,13 @@
   "name": "base-auth-handler",
   "version": "1.0.0",
   "description": "A simple Authentication handling module.",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
-    "build/**/*"
+    "dist/**/*"
   ],
   "scripts": {
-    "clean": "del ./build",
+    "clean": "del ./dist",
     "build": "npm run clean && tsc",
     "update": "npm version patch",
     "pub": "npm run build && npm publish"
