@@ -11,7 +11,7 @@
     "clean": "del ./dist",
     "build": "npm run clean && tsc",
     "update": "npm version patch",
-    "pub": "npm run build && npm publish"
+    "pub": "npm run update && npm run build && npm publish"
   },
   "keywords": [
     "auth",
