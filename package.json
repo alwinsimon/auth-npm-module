@@ -1,6 +1,6 @@
 {
   "name": "base-auth-handler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple Authentication handling module.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,15 +22,15 @@
     "express"
   ],
   "author": "Dr. Alwin Simon M",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alwinsimon/auth-npm-module"
+    "url": "https://github.com/alwinsimon/base-auth-handler-npm-module"
   },
   "bugs": {
-    "url": "https://github.com/alwinsimon/auth-npm-module/issues"
+    "url": "https://github.com/alwinsimon/base-auth-handler-npm-module/issues"
   },
-  "homepage": "https://github.com/alwinsimon/auth-npm-module",
+  "homepage": "https://github.com/alwinsimon/base-auth-handler-npm-module",
   "private": false,
   "devDependencies": {
     "del-cli": "^5.1.0",
