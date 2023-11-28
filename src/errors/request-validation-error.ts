@@ -8,7 +8,7 @@ export class RequestValidationError extends CustomError {
     // Calling the parent class (Error) constructor as this is a constructor of sub-class
     super("Invalid Login Parameters.");
 
-    // Since we are extending a built-in class (Error) the following line of cade has to be added
+    // Since we are extending a built-in class (Error) the following line of code has to be added.
     Object.setPrototypeOf(this, RequestValidationError.prototype);
   }
 
